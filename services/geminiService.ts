@@ -8,7 +8,7 @@ let chat: Chat | null = null;
 const getApiKey = (): string => {
   const apiKey = import.meta.env.VITE_API_KEY;
   if (!apiKey) {
-    throw new Error("API_KEY environment variable not set.");
+    throw new Error("VITE_API_KEY environment variable not set.");
   }
   return apiKey;
 };
