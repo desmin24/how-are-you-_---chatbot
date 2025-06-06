@@ -6,12 +6,13 @@ let ai: GoogleGenAI | null = null;
 let chat: Chat | null = null;
 
 const getApiKey = (): string => {
-  const apiKey = process.env.API_KEY;
+  const apiKey = import.meta.env.VITE_API_KEY;
   if (!apiKey) {
     throw new Error("API_KEY environment variable not set.");
   }
   return apiKey;
 };
+
 
 export const initializeChat = (): Chat => {
   if (!ai) {
