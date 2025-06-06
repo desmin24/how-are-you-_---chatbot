@@ -1,0 +1,5 @@
+{
+  "name": "今天好嗎? - 溫暖陪伴聊天機器人",
+  "description": "一個使用 Gemini API 打造的溫暖聊天機器人，提供傾聽、支持與溫和建議，專為繁體中文用戶設計，融入台灣在地生活情境。",
+  "requestFramePermissions": []
+}
